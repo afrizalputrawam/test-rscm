@@ -35,5 +35,5 @@ $formula_kembali = $total_jarak / $bensin_per_km; // formula tempat 4 ke toko
 $total_bensin = $formula_pergi + $formula_kembali;
 echo "Jarak 1 : 2 km <br> Jarak 2 : 500m <br>Jarak 3 : 1.5 km <br>Jarak 4 : 3.5 km <br>";
 echo "Jika 1 liter bensin untuk 1.5 km, maka Bensin yang dibutuhkan Musni untuk perjalanan ke tempat 4 dan kembali ke toko adalah : <b>".($total_bensin)." Liter</b>";
-
+//done
 ?>
