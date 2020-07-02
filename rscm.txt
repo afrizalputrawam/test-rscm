@@ -1,3 +1,4 @@
 Soal 1 : 
 - perjalanan linear
 - Tarif Parkir
+- Nilai Integer
