@@ -1,0 +1,39 @@
+<?php 
+// SOAL 1
+/* Musni, Seorang Pengantar Makanan akan melakukan Perjalanan Linear, Menggunakan Kendaraan 250cc. Hitung berapa Liter bensin yang Dibutuhkan sampai perjalaan kembali ke toko, jika diketahui Jaraknya sebagai Berikut :
+Toko ke Tempat 1        = 2 km
+Tempat 1 ke Tempat 2    = 500 m
+Tempat 2 ke Tempat 3    = 1.5 km
+Tempat 3 ke Tempat 4    = 3.5 km 
+
+Definisi variable : 
+jarak[0] = 2000m ;
+jarak[1] = 500m ;
+jarak[2] = 1500m ;
+jarak[3] = 3500m ;
+dimana,
+1 km = 1000 m 
+
+PENYELESAIN   : 
+1. Menggunakan looping : for
+    $total = 0;
+   for($i=0; $i<count($jarak); $i++){
+    $total += $jarak[$i];
+    }
+
+2. Menghitung jumlah array [implementasi]
+   $total_jarak = array_sum($jarak);
+*/
+
+$jarak = array(2000,500,1500,3500); // array untuk jarak dari toko ke tempat 1 s.d tempat 4
+
+$total_jarak = array_sum($jarak);
+$bensin_per_km = 1500;
+
+$formula_pergi = $total_jarak / $bensin_per_km; // formula jarak toko ke tempat 4 
+$formula_kembali = $total_jarak / $bensin_per_km; // formula tempat 4 ke toko 
+$total_bensin = $formula_pergi + $formula_kembali;
+echo "Jarak 1 : 2 km <br> Jarak 2 : 500m <br>Jarak 3 : 1.5 km <br>Jarak 4 : 3.5 km <br>";
+echo "Jika 1 liter bensin untuk 1.5 km, maka Bensin yang dibutuhkan Musni untuk perjalanan ke tempat 4 dan kembali ke toko adalah : <b>".($total_bensin)." Liter</b>";
+//done
+?>
